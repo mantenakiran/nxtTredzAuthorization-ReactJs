@@ -1,0 +1,93 @@
+/* Write your CSS code here */
+* {
+  box-sizing: border-box;
+}
+.login-form-bg-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.website-image {
+  width: 250px;
+}
+.website-login-image {
+  display: flex;
+  width: 70%;
+  margin-top: 30px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.website-image-desktop {
+  display: none;
+}
+.input-bg-container {
+  margin-top: 30px;
+}
+.username-label {
+  font-family: 'Roboto';
+  color: #1e293b;
+  font-size: 15px;
+  font-weight: 500;
+}
+.user-input {
+  background-color: #d7dfe9;
+  outline: none;
+  border: none;
+  height: 45px;
+  width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-family: 'Roboto';
+  padding-left: 15px;
+  font-size: 16px;
+}
+.login-button {
+  width: 100%;
+  height: 45px;
+  margin-top: 30px;
+  border: none;
+  background-color: #0b69ff;
+  border-radius: 7px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media screen and (min-width: 992px) {
+  .login-form-bg-container {
+    flex-direction: row;
+
+    justify-content: space-around;
+  }
+  .website-login-image {
+    width: 40%;
+  }
+  .website-image {
+    display: none;
+  }
+  .website-image-desktop {
+    display: flex;
+    align-self: center;
+    width: 200px;
+  }
+  .form-container {
+    width: 30%;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+  }
+}
+.error-message {
+  font-family: 'Roboto';
+  color: #ff0b37;
+  font-size: 15px;
+}
